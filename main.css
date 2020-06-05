@@ -135,7 +135,13 @@ body {
 .side-padding-contact {
     background-color: #EDEDED;
     width: 100%;
-  height: calc(100vh - 217px);
+    height: calc(100vh - 217px);
+}
+
+.side-padding-suite {
+    background-color: #EDEDED;
+    width: 100%;
+    height: calc(66.5vh - 50px);
 }
 
 .navbar-dark .navbar-brand {
@@ -194,7 +200,7 @@ h1 {
 .h2,
 h2 {
     font-size: 3.3rem;
-    color: #FF7F07;
+    color: #E08F00;
 }
 
 .h3,
@@ -211,7 +217,7 @@ h3 {
     font-size: 2rem;
     font-weight: 600 line-height: inherit;
     white-space: nowrap;
-    color: #FF7F07
+    color: #E08F00
 }
 
 .navbar-brandname {
@@ -228,6 +234,13 @@ h3 {
 
 .brandweight {
     font-weight: 300;
+}
+
+.logo {
+    width: 25rem;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-left: 0.1rem;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -377,47 +390,48 @@ h3 {
 }
 
 div.gallery {
-  background-color: #e6e6e6;
-  border-radius: 0px 0px 25px 25px;
-  border: 1px solid #ccc;
+    background-color: #e6e6e6;
+    border-radius: 0px 0px 25px 25px;
+    border: 1px solid #ccc;
 }
 
 div.gallery:hover {
-  filter: opacity(70%);
+    filter: opacity(70%);
 }
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 div.desc {
-  padding: 10px;
-  text-align: center;
-  font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
     font-size: 25px;
-  color: #FF7F07;
+    color: #E08F00;
 }
 
-{box-sizing: border-box;
+    {
+    box-sizing: border-box;
 }
 
 .responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
 }
 
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .carousel-inner img {
     width: 100%;
     height: 100%;
-  }
+}
 
 .carousel-caption {
     position: absolute;
@@ -463,9 +477,21 @@ div.desc {
     padding: 10px;
 }
 
+.programs-padding:hover {
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
 .about-text {
     font-size: x-large;
     font-weight: 300;
+}
+
+.suite-text {
+    font-size: x-large;
+    font-weight: 300;
+    display: inline;
+    color: black;
 }
 
 .drk-text {
@@ -478,19 +504,21 @@ div.desc {
 }
 
 .video-container {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px; height: 0; overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
 }
- 
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .centering {
@@ -516,27 +544,38 @@ height: 100%;
     div.supersmall {
         font-size: 40px;
     }
-    
+
     h1 {
-         font-size: 25px;
+        font-size: 25px;
+    }
+
+    .logo {
+        width: 15rem;
+        height: auto;
+    }
+    
+    .suite-text {
+        font-size: 1rem;
     }
 }
 
 @media only screen and (max-width: 20000px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-  .responsive {
-    width: 100%;
-  }
+    .responsive {
+        width: 100%;
+    }
+
     .img-custom {
         padding-bottom: .4rem;
         padding-top: .4rem;
     }
+
     div.centering {
         text-align: center;
     }
