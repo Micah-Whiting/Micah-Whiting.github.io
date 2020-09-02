@@ -237,7 +237,7 @@ h3 {
 }
 
 .logo {
-    width: 25rem;
+    width: 20rem;
     height: auto;
     border-radius: 0.5rem;
     margin-left: 0.1rem;
@@ -540,6 +540,16 @@ div.desc {
 
 @media (min-width:1028px) {}
 
+@media screen and (max-width: 990px) {
+    h1 {
+        margin-left: 1rem;
+    }
+
+    .logo {
+        margin-left: 1rem;
+    }
+}
+
 @media screen and (max-width: 427px) {
     div.supersmall {
         font-size: 40px;
@@ -547,11 +557,13 @@ div.desc {
 
     h1 {
         font-size: 25px;
+        margin-left: 1rem;
     }
 
     .logo {
-        width: 15rem;
+        width: 10rem;
         height: auto;
+        margin-left: 1rem;
     }
     
     .suite-text {
