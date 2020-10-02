@@ -29,6 +29,26 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
+.fa-custom {
+    background: #55a2ff;
+    color: rgba(255, 255, 255, .9);
+    border-radius: 5px;
+    padding: 0.5rem;
+    float: right;
+    margin: 3px;
+    display: block;
+}
+
+.absolute-social {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.small-social {
+    display: none;
+}
+
 .row {
     display: -ms-flexbox;
     display: flex;
@@ -45,12 +65,34 @@ body {
     height: 100%;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1.3rem;
+    font-size: 5.3rem;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
     text-align: left;
     background-color: #fff
+}
+
+.nav-text {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+    max-width: 10rem;
+}
+
+.header-img-right {
+    float: right;
+    padding-top: 2.5rem;
+}
+
+.gears2 {
+    display: none;
+    padding-top: 0rem;
+    position: relative;
 }
 
 @media (min-width:768px) {
@@ -119,7 +161,7 @@ body {
 }
 
 .header-padding {
-    background-color: #0687C8;
+    background-color: #005BFF;
     padding: 0rem;
 }
 
@@ -149,7 +191,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, .75)
+    color: rgba(0, 0, 0, .2)
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
@@ -244,8 +286,8 @@ h3 {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 2rem;
-    padding-left: 2rem
+    padding-right: 1.5rem;
+    padding-left: 1.5rem
 }
 
 .navbar-dark .navbar-brand {
@@ -253,7 +295,8 @@ h3 {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, .75)
+    color: rgba(225, 225, 225, 1);
+    font-weight: 500;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
@@ -275,7 +318,7 @@ h3 {
 }
 
 .bg-dark {
-    background-color: #0687C8 !important
+    background-color: #005BFF !important
 }
 
 .mt-5,
@@ -485,6 +528,11 @@ div.desc {
 .about-text {
     font-size: x-large;
     font-weight: 300;
+    margin: 10px;
+}
+
+.h-margin {
+    margin-left: 10px;
 }
 
 .suite-text {
@@ -540,7 +588,8 @@ div.desc {
 
 @media (min-width:1028px) {}
 
-@media screen and (max-width: 990px) {
+
+@media screen and (max-width: 991px) {
     h1 {
         margin-left: 1rem;
     }
@@ -548,9 +597,48 @@ div.desc {
     .logo {
         margin-left: 1rem;
     }
+
+    .gears2 {
+        display: block;
+    }
 }
 
-@media screen and (max-width: 427px) {
+@media screen and (max-width: 517px) {
+    .gears2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 514px) {
+    div.supersmall {
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-left: 1rem;
+    }
+
+    .logo {
+        width: 17rem;
+        height: auto;
+        margin-left: 1rem;
+    }
+
+    .suite-text {
+        font-size: 1rem;
+    }
+    
+    .fa-custom {
+    display: none;
+}
+    
+    .small-social {
+    display: block;
+}
+}
+
+@media screen and (max-width: 400px) {
     div.supersmall {
         font-size: 40px;
     }
@@ -565,10 +653,18 @@ div.desc {
         height: auto;
         margin-left: 1rem;
     }
-    
+
     .suite-text {
         font-size: 1rem;
     }
+    
+    .fa-custom {
+    display: none;
+}
+    
+    .small-social {
+    display: block;
+}
 }
 
 @media only screen and (max-width: 20000px) {
