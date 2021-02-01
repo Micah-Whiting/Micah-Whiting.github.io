@@ -549,6 +549,8 @@ div.desc {
 .contact-text {
     font-weight: 300;
     font-size: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .video-container {
